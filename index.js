@@ -6,7 +6,7 @@ async function getJokes(){
     const respData = await resp.json();
     jokes.innerHTML = unescape(respData.setup);
     punch.innerHTML = unescape(respData.punchline);
-    read(respData.setup+"."+respData.punchline);
+    read(respData.setup+respData.punchline);
 }
 function getnextJoke(){
     getJokes();
@@ -18,8 +18,8 @@ function read(readJokes) {
     
     speech.text = msg;
     speech.volume = 1;
-    speech.rate = 0.7;
-    speech.pitch = 4;
+    speech.rate = 1;
+    speech.pitch = 1;
     
     window.speechSynthesis.speak(speech);
 }
