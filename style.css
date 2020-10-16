@@ -62,3 +62,6 @@ body h2{
     justify-content: center;
     align-items: center;
 }
+#jokes{
+    font-weight: bold;
+}

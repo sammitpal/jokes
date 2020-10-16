@@ -1,10 +1,12 @@
-const api_url = "http://api.icndb.com/jokes/random";
+const api_url = "https://official-joke-api.appspot.com/random_joke";
 const jokes = document.getElementById("jokes");
+const punch = document.getElementById("punch");
 async function getJokes(){
     const resp = await fetch(api_url);
     const respData = await resp.json();
-    jokes.innerHTML = unescape(respData.value.joke);
-    read(respData.value.joke);
+    jokes.innerHTML = unescape(respData.setup);
+    punch.innerHTML = unescape(respData.punchline);
+    read(respData.setup+"."+respData.punchline);
 }
 function getnextJoke(){
     getJokes();
