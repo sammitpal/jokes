@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #446495;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    margin: a;
+}
+body h2{
+    padding: 2rem;
+}
+.card
+{
+    max-width: 80vw;
+    max-height: 80vh;
+    background-color: #eee;
+    height: 200px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: #1d1d1d;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.card .para{
+    overflow: auto;
+    height: 70px;
+}
+.card button{
+    background-color: #432D2C;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 50px;
+    cursor: pointer;
+}
+.card button:focus{
+    outline: none;
+}
+.image{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+.image img{
+    width: 100%;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
