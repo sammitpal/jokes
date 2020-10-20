@@ -46,6 +46,9 @@ body h2{
     margin: 50px;
     cursor: pointer;
 }
+.card button:active{
+    transform: scale(0.9);
+}
 .card button:focus{
     outline: none;
 }
